@@ -10,7 +10,7 @@
 ##
 ## ROOT PATHS
 ##
-TOOLS=/home/min/a/cgusthin/git
+TOOLS=$(TOOLS_DIR)
 
 
 ##
@@ -30,7 +30,7 @@ GIT:=git
 ##
 ## LLVM
 ##
-LLVM_BUILD_DIR:=/home/min/a/cgusthin/git/llvm-project-rocm/build_cfmse/bin
+LLVM_BUILD_DIR:=$(LLVM_BUILD_DIR)/bin
 LLVM_CONFIG:=$(LLVM_BUILD_DIR)/llvm-config
 CLANG:=$(LLVM_BUILD_DIR)/clang
 CLANGXX:=$(LLVM_BUILD_DIR)/clang++
@@ -57,8 +57,8 @@ STP=$(STP_DIR)/build/stp
 MINISAT_DIR=$(TOOLS)/minisat
 MINISAT=$(MINISAT_DIR)/build/libminisat.so
 
-KLEE_SRC_DIR=/home/min/a/cgusthin/git/klee
-KLEE_DIR=/home/min/a/cgusthin/git/klee/build
+KLEE_SRC_DIR=$(KLEE_BUILD_DIR)/../
+KLEE_DIR=$(KLEE_BUILD_DIR)
 KLEE_BIN=$(KLEE_DIR)/bin
 KLEE=$(KLEE_BIN)/klee
 
