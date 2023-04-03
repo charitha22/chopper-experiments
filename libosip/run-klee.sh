@@ -8,6 +8,5 @@ ${KLEE_BUILD_DIR}/bin/klee \
     -simplify-sym-indices \
     -libc=uclibc \
     -search=nurs:covnew \
-    -klee-cfmse \
-    -klee-cfmse-run-on-loops=false \
+    -klee-cfmse  -klee-cfmse-run-only-on-loops=false -klee-cfmse-loads-symbolic \
     ./test-driver.bc 10
