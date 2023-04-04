@@ -45,4 +45,4 @@ $(BC_TARGET): $(TARGET) osip_archive
 	$(OPT) -mem2reg $@ -o $@
 
 clean:
-	rm -rf $(TARGET) $(TARGET_GCOV) $(BC_TARGET) *.o *.bc *.ll ./build
+	rm -rf $(TARGET) $(TARGET_GCOV) $(BC_TARGET) *.o *.bc *.ll ./klee-* ./build
