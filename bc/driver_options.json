@@ -1,0 +1,7 @@
+{
+  "KLEE_OPTIONS" : "--simplify-sym-indices --max-time=3h   --max-memory=32768   --external-calls=all   --only-output-states-covering-new   --libc=uclibc   --posix-runtime --search=nurs:covnew  --write-cov",
+  "CFMSE_IGNORE_JSON" : "cfmse_ignore.json",
+  "CFM_OPTIONS" : "-klee-cfmse  -klee-cfmse-run-only-on-loops=false -klee-cfmse-loads-symbolic",
+  "PROG_ARGS" : " --sym-args 0 8 16 --sym-files 1 64 --sym-stdin 8 --sym-stdout"
+}
+
